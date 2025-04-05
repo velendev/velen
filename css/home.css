@@ -1,0 +1,12 @@
+.nome{
+    color: blue;
+    font-size: 40px;
+    
+  }
+ .barra{
+    width:10%;
+    background-color:rgb(44, 44, 238);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+ }
