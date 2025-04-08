@@ -306,13 +306,23 @@ nav ul li a:hover {
     text-align: center;
   }
   .contatti-form {
+    display: grid; 
     grid-template-columns: 1fr;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .colonna {
     max-width: 100%;
+    width: 100%;
     margin: 0 auto;
+    padding: 10px;
     text-align: center;
   }
 
+  input, textarea, form button {
+    width: 100%;
+  }
 }
