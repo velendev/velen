@@ -4,28 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/contatti.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="icon" href="../favicon.png" type="image/png">
 </head>
 <body>
+  <div class="heroo">
+  </div>
+<!-- NAVBAR -->
+ <header>
+<nav>
+  <div class="logo">
+    <img src="../logo.png" alt="logo">
+  </div>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="logo">Velen.</div>
-    <ul>
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+  <ul class="nav-links">
       <li><a href="../index.html">Home</a></li>
       <li><a href="./portfolio.html">Portfolio</a></li>
       <li><a href="./servizi.html">Servizi</a></li>
       <li><a href="./contatti.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <div class="heroo">
-    <img src="../hero.gif" alt="hero">
-  </div>
-
+      <li><a href="./singolo.html">Singolo Progetto</a></li>
+  </ul>
+</nav>
+</header>
   <!-- INTRO -->
   <h1>Perché scegliere i nostri servizi?</h1>
   <p><strong>Personalizzazione Totale:</strong> Ogni business è unico e merita un sito web che rispecchi la sua identità. Offriamo soluzioni su misura per soddisfare le vostre esigenze specifiche.</p>
@@ -35,45 +41,46 @@
 
   <hr>
 
-  <!-- CONTATTI -->
   <section class="contatti-form">
-    <!-- COLONNA SINISTRA -->
-    <div class="colonna sinistra">
-      <h3>Contatti & Indirizzo</h3>
-      <address>
-        <p>VelenDev</p>
-        <p>Via dei Sogni, 42</p>
-        <p>20100 Milano (MI)</p>
-        <p>Italia</p>
-        <p>Email: <a href="mailto:robertsaurobert@gmail.com">robertsaurobert@gmail.com</a></p>
-        <p>Telefono: <a href="tel:+39000000000">+39 000 000 0000</a></p>
-      </address>
 
-      <h3>Dove siamo</h3>
-      <iframe 
-        width="400" 
-        height="200" 
-        frameborder="0" 
-        scrolling="no" 
-        marginheight="0" 
-        marginwidth="0" 
-        src="https://www.openstreetmap.org/export/embed.html?bbox=9.18%2C45.45%2C9.20%2C45.47&layer=mapnik&marker=45.464203%2C9.190498">
-      </iframe>
-      <p>
-        <a href="https://www.openstreetmap.org/?mlat=45.464203&mlon=9.190498#map=16/45.4642/9.1905">Visualizza mappa</a>
-      </p>
-    </div>
-
-    <!-- COLONNA DESTRA -->
-    <div class="colonna destra">
-      <h4>Scrivimi un messaggio</h4>
+    <!-- Form messaggi -->
+    <div class="colonna">
       <form>
+        <h2>Scrivimi un messaggio</h2>
         <input type="text" placeholder="Il tuo nome" required>
         <input type="email" placeholder="La tua email" required>
-        <textarea placeholder="Il tuo messaggio" rows="5" required></textarea>
-        <button type="submit" class="button">Invia</button>
+        <textarea rows="5" placeholder="Il tuo messaggio" required></textarea>
+        <button type="submit">Invia</button>
       </form>
     </div>
+  
+    <!-- Contatti -->
+    <div class="colonna">
+      <h2>Contatti</h2>
+      <address>
+        <p>Email: <a href="mailto:robert@email.com">robert@email.com</a></p>
+        <p>Telefono: <a href="tel:+393331112233">+39 333 111 2233</a></p>
+        <p>Indirizzo: Via Esempio 123, Roma</p>
+        <p>P.IVA: 12345678901</p>
+      </address>
+    </div>
+  
+    <!-- Mappa -->
+    <div class="colonna">
+      <div class="mappa">
+        <h2>Come trovarci</h2>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.2381433216043!2d12.492230415420196!3d41.8902104792216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61a671a62a0f%3A0x4b9d6d79e13d7f2!2sColosseo%2C%20Piazza%20del%20Colosseo%2C%20Roma!5e0!3m2!1sit!2sit!4v1712332823787!5m2!1sit!2sit"
+        width="100%"
+        height="250"
+        style="border:0; border-radius: 10px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      </div>
+    </div>
+  
   </section>
 
   <!-- BOTTONI -->
@@ -87,8 +94,34 @@
   </div>
 
   <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Robert | Web Developer</p>
+  <footer class="footer">
+    <div class="footer-container">
+  
+      <!-- Contatti -->
+      <div class="footer-section">
+        <h3>Contatti</h3>
+        <address>
+          <p>Email: <a href="mailto:robert@email.com">robert@email.com</a></p>
+          <p>Tel: <a href="tel:+393331112233">+39 333 111 2233</a></p>
+          <p>Via Esempio 123, Roma (RM)</p>
+          <p>P.IVA: 12345678901</p>
+        </address>
+      </div>
+  
+      <!-- Link legali -->
+      <div class="footer-section">
+        <h3>Informazioni Legali</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Robert | Web Developer. Tutti i diritti riservati.</p>
+    </div>
   </footer>
 
 </body>
