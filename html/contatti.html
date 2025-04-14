@@ -3,42 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>Contatti</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/contatti.css">
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="icon" href="../favicon.png" type="image/png">
 </head>
 <body>
-  <div class="heroo">
-  </div>
-<!-- NAVBAR -->
- <header>
-<nav>
-  <div class="logo">
-    <img src="../logo.png" alt="logo">
-  </div>
+  <div class="heroo"></div>
 
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="hamburger">&#9776;</label>
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="../logo.png" alt="logo">
+      </div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="../index.html" title="Vai alla Home">Home</a></li>
+        <li><a href="./portfolio.html" title="Guarda i miei progetti">Portfolio</a></li>
+        <li><a href="./servizi.html" title="Scopri i miei servizi">Servizi</a></li>
+        <li><a href="./contatti.html" title="Contattami direttamente">Contatti</a></li>
+        <li><a href="./singolo.html" title="Fatti un'idea">Progetto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <ul class="nav-links">
-      <li><a href="../index.html" title="Vai alla Home">Home</a></li>
-      <li><a href="./portfolio.html" title="Guarda i miei progetti">Portfolio</a></li>
-      <li><a href="./servizi.html"  title="Scopri i miei servizi">Servizi</a></li>
-      <li><a href="./contatti.html" title="Contattami direttamente">Contact</a></li>
-      <li><a href="./singolo.html" title="Fatti un idea">Progetto</a></li>
-  </ul>
-</nav>
-</header>
   <!-- INTRO -->
-  <h1>Perché scegliere i nostri servizi?</h1>
-  <p><strong>Personalizzazione Totale:</strong> Ogni business è unico e merita un sito web che rispecchi la sua identità. Offriamo soluzioni su misura per soddisfare le vostre esigenze specifiche.</p>
-  <hr>
+  <section class="intro">
+    <h1>Contattami per iniziare il tuo progetto</h1>
+    <p>Se hai domande, richieste di preventivo o vuoi semplicemente iniziare una collaborazione, compila il modulo o usa i recapiti qui sotto.</p>
+  </section>
 
+  <!-- FORM & CONTATTI -->
   <section class="contatti-form">
-
     <!-- Form messaggi -->
     <div class="colonna">
       <form>
@@ -49,10 +48,10 @@
         <button type="submit">Invia</button>
       </form>
     </div>
-  
+
     <!-- Contatti -->
     <div class="colonna">
-      <h2>Contatti</h2>
+      <h2>Dati di contatto</h2>
       <address>
         <p>Email: <a href="mailto:robert@email.com">robert@email.com</a></p>
         <p>Telefono: <a href="tel:+393331112233">+39 333 111 2233</a></p>
@@ -60,12 +59,11 @@
         <p>P.IVA: 12345678901</p>
       </address>
     </div>
-  
+
     <!-- Mappa -->
     <div class="colonna">
-      <div class="mappa">
-        <h2>Come trovarci</h2>
-        <iframe
+      <h2>Come trovarmi</h2>
+      <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.2381433216043!2d12.492230415420196!3d41.8902104792216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61a671a62a0f%3A0x4b9d6d79e13d7f2!2sColosseo%2C%20Piazza%20del%20Colosseo%2C%20Roma!5e0!3m2!1sit!2sit!4v1712332823787!5m2!1sit!2sit"
         width="100%"
         height="250"
@@ -74,26 +72,18 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
-      </div>
     </div>
-  
   </section>
 
   <!-- BOTTONI -->
   <div class="buttons">
-    <div class="button1">
-      <a href="../html/contatti.html">Consulenza Gratuita</a>
-  </div>
-    <div class="button">
-      <a href="https://wa.me/393337874041">Chat</a>
-    </div>
+    <a href="../html/contatti.html" class="button1" title="Richiedi una consulenza gratuita">Consulenza Gratuita</a>
+    <a href="https://wa.me/393337874041" class="button" title="Scrivimi su WhatsApp">Chat WhatsApp</a>
   </div>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
-  
-      <!-- Contatti -->
       <div class="footer-section">
         <h3>Contatti</h3>
         <address>
@@ -103,8 +93,6 @@
           <p>P.IVA: 12345678901</p>
         </address>
       </div>
-  
-      <!-- Link legali -->
       <div class="footer-section">
         <h3>Informazioni Legali</h3>
         <ul>
@@ -112,13 +100,10 @@
           <li><a href="#">Cookie Policy</a></li>
         </ul>
       </div>
-  
     </div>
-  
     <div class="footer-bottom">
       <p>&copy; 2025 Robert | Web Developer. Tutti i diritti riservati.</p>
     </div>
   </footer>
-
 </body>
 </html>
