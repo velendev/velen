@@ -1,0 +1,42 @@
+.servizi-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .box-servizio {
+    background-color: #1a2e38;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .box-servizio:hover {
+    transform: scale(1.03);
+  }
+
+  .box-servizio h3 {
+    color: #00bfff;
+    margin-bottom: 15px;
+  }
+
+  .box-servizio p {
+    margin: 8px 0;
+  }
+
+  .prezzo {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #00ffae;
+  }
+
+  .consulenza {
+    background-color: #2c2c2c;
+    padding: 20px;
+    margin-top: 60px;
+    border-left: 4px solid #00bfff;
+    border-radius: 8px;
+  }
