@@ -10,6 +10,7 @@
     flex-direction: column;
     overflow-x: hidden;
     width: 100%;
+    box-sizing: border-box;
     
   }
     /*Il nostro form con adress*/
