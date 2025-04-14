@@ -3,10 +3,53 @@
     font-size: 40px;
     
   }
- .barra{
-    width:10%;
-    background-color:rgb(44, 44, 238);
-    color: white;
-    border-radius: 10px;
-    text-align: center;
+  .skills {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+ 
+ .skill p {
+   margin-bottom: 6px;
+   font-weight: 500;
+ }
+ 
+ .barra {
+   background-color: #222;
+   border-radius: 6px;
+   overflow: hidden;
+   height: 25px;
+ }
+ 
+ .barra > div {
+   height: 100%;
+   padding-left: 10px;
+   line-height: 25px;
+   color: #000;
+   font-weight: bold;
+   animation: grow 2s ease forwards;
+ }
+ 
+ .html {
+   width: 99%;
+   background: linear-gradient(90deg, #00d2ff, #3a47d5);
+ }
+ 
+ .css {
+   width: 95%;
+   background: linear-gradient(90deg, #00c9ff, #92fe9d);
+ }
+ 
+ .seo {
+   width: 90%;
+   background: linear-gradient(90deg, #f7971e, #ffd200);
+ }
+ 
+ .design {
+   width: 88%;
+   background: linear-gradient(90deg, #f953c6, #b91d73);
+ }
+ @keyframes grow {
+   from { width: 0; }
+   to { width: inherit; }
  }
