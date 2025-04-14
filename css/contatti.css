@@ -15,12 +15,12 @@
   }
     /*Il nostro form con adress*/
     .contatti-form {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      margin: 30px auto;
-      max-width: 900px;
-      padding: 20px;
+      display: grid; 
+  grid-template-columns: 1fr;
+  padding: 10px !important;
+  margin: 20px auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
       border-radius: 10px;
       background-color: #121e25;
       box-shadow: 2px 2px 4px white;
@@ -72,6 +72,11 @@
       }
       h1,h2,h3,p{
         padding: 20px;
+      }
+      iframe {
+        max-width: 100%;
+        width: 100%;
+        display: block;
       }
   
     
