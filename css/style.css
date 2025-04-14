@@ -75,6 +75,17 @@ body {
   font-family: 'Poppins', sans-serif;
   color: white;
 }
+.personal{
+  display: flex;
+  justify-content: center;
+}
+.personal img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+}
 
 main.hero, .contenitore {
   max-width: 1100px;
