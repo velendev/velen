@@ -1,28 +1,16 @@
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  padding: 30px 20px;
-  margin: 40px auto;
-  max-width: 1100px;
-}
-
-main.portfolio > div,
-.servizi-box {
-  border: 1px solid white;
-  border-radius: 20px;
-  padding: 20px;
-  background-color: #1a2e38;
-  box-shadow: 0px 2px 0px #ffffff;
-  text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease;
+  align-items: center;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 900px;
 }
 
-.servizi-box:hover {
-  transform: translateY(-5px);
+main.portfolio > div {
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: left;
 }
 
 /* IMMAGINI */
@@ -33,21 +21,17 @@ img.zoom,
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.servizi-box h3 {
-  color: #00bfff;
-  margin-bottom: 10px;
-}
-
-.servizi-box p {
-  margin-bottom: 8px;
-  line-height: 1.5;
-}
-
-.servizi-box .prezzo {
-  font-weight: bold;
-  color: #00ffae;
-  margin-top: auto;
-  padding-top: 10px;
+/* CONTENITORI PROGETTI */
+div.project1,
+div.project2 {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 2px 0px #ffffff;
+  background-color: #1a2e38;
 }
