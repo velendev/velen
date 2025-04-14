@@ -1,0 +1,59 @@
+.prova{
+    width: 350px;
+    height: auto;
+    
+  }
+  .progetto-singolo {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .progetto-singolo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .progetto-singolo h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .progetto-singolo h2 {
+    color: #00bfff;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  
+  .progetto-singolo p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .progetto-singolo ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .progetto-singolo ul li {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  
+  .progetto-singolo .button {
+    background-color: rgb(44, 44, 238);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .progetto-singolo .button:hover {
+    background-color: red;
+  }

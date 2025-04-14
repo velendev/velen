@@ -1,0 +1,53 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+main.portfolio > div,
+.servizi-box {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #1a2e38;
+  box-shadow: 0px 2px 0px #ffffff;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.servizi-box:hover {
+  transform: translateY(-5px);
+}
+
+/* IMMAGINI */
+img.zoom,
+.prova {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.servizi-box h3 {
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.servizi-box p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.servizi-box .prezzo {
+  font-weight: bold;
+  color: #00ffae;
+  margin-top: auto;
+  padding-top: 10px;
+}
