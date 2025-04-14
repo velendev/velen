@@ -351,4 +351,7 @@ nav ul li a:hover {
   input, textarea, form button {
     width: 100%;
   }
+  .personal img{
+    width: 100%;
+  }
 }
